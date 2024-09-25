@@ -21,23 +21,27 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #84ffef;
 }
-body{
+
+body {
     background-color: black !important;
     overflow-x: hidden;
 }
 
-footer{
+footer {
     background-color: black !important;
     color: white !important;
 }
+
 .head1 {
     color: #f1f1f1;
     text-shadow: bisque;
 }
-.recipe-cards:hover{
+
+.recipe-cards:hover {
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn
 }
+
 @-webkit-keyframes zoomIn {
     0% {
         opacity: 0;
@@ -61,11 +65,13 @@ footer{
         opacity: 1
     }
 }
-.zoomUp:hover{
+
+.zoomUp:hover {
     background-color: burlywood;
     -webkit-animation-name: zoomInUp;
     animation-name: zoomInUp
 }
+
 @keyframes zoomInUp {
     0% {
         opacity: 0;
@@ -82,4 +88,57 @@ footer{
         -webkit-animation-timing-function: cubic-bezier(.175, .885, .32, 1);
         animation-timing-function: cubic-bezier(.175, .885, .32, 1)
     }
+}
+
+/* animation */
+.food-items img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.food-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 60;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.food-items img:nth-child(1){
+    animation-delay: 2s;
+}
+.food-items img:nth-child(2){
+    animation-delay: 4.5s;
+}
+.food-items img:nth-child(3){
+    animation-delay: 3s;
+}
+.food-items img:nth-child(4){
+    animation-delay: 7s;
+}
+.food-items img:nth-child(5){
+    animation-delay: 1s;
+}
+.food-items img:nth-child(6){
+    animation-delay: 2.5s;
 }
