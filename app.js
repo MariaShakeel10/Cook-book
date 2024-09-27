@@ -22,7 +22,7 @@ function displayRecipes(recipes) {
           <h5 class="card-title">${menu.name}</h5>
           <p class="card-text">Cuisine: ${menu.cuisine}</p>
           <p class="card-text">Difficulty: ${menu.difficulty}</p>
-          <a href="#" class="btn btn-primary" onclick="newTab('${menu.name.replace(/\s+/g, '-')}.html', '${menu.ingredients.join(", ")}', '${menu.instructions.join(", ")}', '${menu.mealType.join(", ")}')">Click to see more..</a>
+          <a href="#" class="btn btn-color rounded-pill" onclick="newTab('${menu.name.replace(/\s+/g, '-')}.html', '${menu.ingredients.join(", ")}', '${menu.instructions.join(", ")}', '${menu.mealType.join(", ")}')">Click to see more..</a>
         </div>
       </div>`;
   });

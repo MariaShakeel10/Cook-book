@@ -37,6 +37,18 @@ footer {
     text-shadow: bisque;
 }
 
+.btn-color {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 24%, rgba(2, 177, 232, 1) 59%, rgba(0, 212, 255, 1) 100%);
+    border: none;
+    color: whitesmoke;
+}
+.btn-color:hover{
+    color: white;
+    background: rgb(2,0,36);
+background: linear-gradient(45deg, rgba(2,0,36,0.6446953781512605) 0%, rgba(9,9,121,0.7567401960784313) 24%, rgba(2,177,232,0.7147233893557423) 59%, rgba(0,212,255,1) 100%);
+}
+
 .recipe-cards:hover {
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn
@@ -89,10 +101,14 @@ footer {
         animation-timing-function: cubic-bezier(.175, .885, .32, 1)
     }
 }
-.ketchup,.salt,.pepper {
- height: 200px;
- width: 200px;
+
+.ketchup,
+.salt,
+.pepper {
+    height: 200px;
+    width: 200px;
 }
+
 /* animation */
 .food-items img {
     width: 50px;
@@ -127,21 +143,27 @@ footer {
         opacity: 0;
     }
 }
-.food-items img:nth-child(1){
+
+.food-items img:nth-child(1) {
     animation-delay: 2s;
 }
-.food-items img:nth-child(2){
+
+.food-items img:nth-child(2) {
     animation-delay: 4.5s;
 }
-.food-items img:nth-child(3){
+
+.food-items img:nth-child(3) {
     animation-delay: 3s;
 }
-.food-items img:nth-child(4){
+
+.food-items img:nth-child(4) {
     animation-delay: 7s;
 }
-.food-items img:nth-child(5){
+
+.food-items img:nth-child(5) {
     animation-delay: 1s;
 }
-.food-items img:nth-child(6){
+
+.food-items img:nth-child(6) {
     animation-delay: 2.5s;
 }
